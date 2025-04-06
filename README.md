@@ -1,8 +1,21 @@
+# 📱 Educational Content App
+
+A React Native app for exploring categorized educational content with bookmarking, filtering, and searching capabilities.
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+
+- Node.js >= 14.x
+- npm or yarn
+- Android Studio / Xcode
+- React Native CLI
+
+git clone <https://github.com/Nijesha/Nijesha_practicle.git>
+cd project-directory
+yarn install
 
 ## Step 1: Start Metro
 
@@ -28,9 +41,6 @@ With Metro running, open a new terminal window/pane from the root of your React 
 # Using npm
 npm run android
 
-# OR using Yarn
-yarn android
-```
 
 ### iOS
 
@@ -53,45 +63,38 @@ For more information, please visit [CocoaPods Getting Started guide](https://gui
 ```sh
 # Using npm
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
 If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
 
 This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
-## Step 3: Modify your app
+## 📸 Screenshots
 
-Now that you have successfully run the app, let's make changes!
+| Home Screen | Search Bar | Filter Buttons | Bookmarks Screen | Details Buttons |
+|-------------|------------------|----------------|
+| ![Home](./assets/screenshots/home.png) | ![Search](./assets/screenshots/search.png) | ![Filters](./assets/screenshots/filters.png) | ˇ ![Bookmarks](./assets/screenshots/bookmarks.png) | ![Details](./assets/screenshots/details.png) |
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 📸 App Video
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+<https://drive.google.com/file/d/1p0lJ-No6FKkKRWnNoWHK1bjhy9tdJVgK/view?usp=sharing>
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## 💡 Approach
 
-## Congratulations! :tada:
+- Used `FlatList` for performance when rendering lists.
+- Created reusable component `CategoriesItems` for listing each card.
+- `AsyncStorage` is used to persist bookmarks locally.
+- Filters and search are applied using controlled state logic.
+- The UI is styled with `normalize()` for responsive dimensions.
 
-You've successfully run and modified your React Native App. :partying_face:
+## 🛠 Libraries Used
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+| Library | Purpose |
+|--------|---------|
+| react-native | Core framework |
+| react-native-async-storage | Bookmark storage |
+| react-navigation | (If used) Navigation |
+| @react-navigation/stack | stack navigator |
+| normalize | Responsive styling |
+| custom components | Clean modular UI |
+| react-i18nex | Handle multi-language |
