@@ -13,7 +13,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 - Android Studio / Xcode
 - React Native CLI
 
-git clone <https://github.com/Nijesha/Nijesha_practicle.git>
+git clone <https://github.com/Nijesha/educational.git>
 cd project-directory
 yarn install
 
